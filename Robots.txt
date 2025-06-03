@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yourusername.github.io/sitemap.xml
+
+# Disallow sensitive files
+Disallow: /assets/js/analytics.js
+Disallow: /.git/
