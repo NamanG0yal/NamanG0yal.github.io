@@ -1,7 +1,7 @@
 {
-    "name": "John Doe - Academic Portfolio",
-    "short_name": "John Doe",
-    "description": "Dr. John Doe's academic portfolio featuring research in theoretical physics and computational methods",
+    "name": "Naman Goyal",
+    "short_name": "Naman Goyal",
+    "description": "Naman Goyal's Portfolio site",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
