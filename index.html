@@ -1,203 +1,351 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/Person">
 <head>
+    <!-- Essential Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naman Goyal</title>
-    <style>
-        :root {
-            --text-primary: #1a1a1a;
-            --text-secondary: #4a4a4a;
-            --bg-primary: #ffffff;
-            --accent: #007acc;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', system-ui, sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
-            color: var(--text-primary);
-            background-color: var(--bg-primary);
-            font-size: 1.1rem;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
-
-        header {
-            margin-bottom: 4rem;
-            padding: 2rem 0;
-            border-bottom: 1px solid #eee;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-        }
-
-        nav {
-            margin-top: 1.5rem;
-        }
-
-        nav a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            margin-right: 1.5rem;
-            transition: color 0.2s;
-        }
-
-        nav a:hover {
-            color: var(--accent);
-        }
-
-        section {
-            margin: 4rem 0;
-        }
-
-        h2 {
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-            font-weight: 500;
-        }
-
-        .item {
-            margin-bottom: 2.5rem;
-        }
-
-        .item h3 {
-            font-size: 1.2rem;
-            margin-bottom: 0.25rem;
-        }
-
-        .item .meta {
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-            font-size: 0.95rem;
-        }
-
-        .item p {
-            color: var(--text-secondary);
-            line-height: 1.7;
-        }
-
-        footer {
-            margin-top: 4rem;
-            padding: 2rem 0;
-            border-top: 1px solid #eee;
-            text-align: center;
-            color: var(--text-secondary);
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>John Doe - Researcher & Academic Portfolio | Physics & Technology</title>
+    <meta name="title" content="John Doe - Researcher & Academic Portfolio | Physics & Technology">
+    <meta name="description" content="Dr. John Doe is a postdoctoral researcher specializing in theoretical physics, quantum mechanics, and advanced computational methods. Explore research publications, academic achievements, and educational resources.">
+    <meta name="keywords" content="John Doe, theoretical physics, quantum mechanics, postdoctoral researcher, academic portfolio, research publications, physics education, computational physics">
+    <meta name="author" content="John Doe">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourusername.github.io/">
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="John Doe - Academic Portfolio">
+    <meta property="og:url" content="https://yourusername.github.io/">
+    <meta property="og:title" content="John Doe - Researcher & Academic Portfolio">
+    <meta property="og:description" content="Dr. John Doe is a postdoctoral researcher specializing in theoretical physics, quantum mechanics, and advanced computational methods.">
+    <meta property="og:image" content="https://yourusername.github.io/assets/images/profile-photo.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@yourtwitterhandle">
+    <meta name="twitter:creator" content="@yourtwitterhandle">
+    <meta name="twitter:title" content="John Doe - Researcher & Academic Portfolio">
+    <meta name="twitter:description" content="Dr. John Doe is a postdoctoral researcher specializing in theoretical physics, quantum mechanics, and advanced computational methods.">
+    <meta name="twitter:image" content="https://yourusername.github.io/assets/images/profile-photo.jpg">
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="manifest" href="./assets/manifest.json">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "John Doe",
+        "jobTitle": "Postdoctoral Researcher",
+        "description": "Theoretical physicist specializing in quantum mechanics and computational methods",
+        "url": "https://yourusername.github.io/",
+        "sameAs": [
+            "https://scholar.google.com/citations?user=yourscholarid",
+            "https://orcid.org/0000-0000-0000-0000",
+            "https://linkedin.com/in/yourprofile",
+            "https://twitter.com/yourtwitterhandle"
+        ],
+        "image": "https://yourusername.github.io/assets/images/profile-photo.jpg",
+        "email": "john.doe@university.edu",
+        "affiliation": {
+            "@type": "Organization",
+            "name": "University Name",
+            "url": "https://university.edu"
+        },
+        "alumniOf": [
+            {
+                "@type": "Organization",
+                "name": "Previous University",
+                "url": "https://previousuni.edu"
             }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            nav a {
-                display: block;
-                margin: 0.5rem 0;
-            }
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        ],
+        "knowsAbout": [
+            "Theoretical Physics",
+            "Quantum Mechanics",
+            "Computational Physics",
+            "Research Methodology"
+        ]
+    }
+    </script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="./assets/css/style.css" as="style">
+    <link rel="preload" href="./assets/js/main.js" as="script">
+    
+    <!-- DNS Prefetch for External Resources -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Naman Goyal</h1>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#publications">Publications</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home" class="brand-link">John Doe</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" role="menubar">
+                <li class="nav-item" role="none">
+                    <a href="#home" class="nav-link" role="menuitem">Home</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#research" class="nav-link" role="menuitem">Research</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#publications" class="nav-link" role="menuitem">Publications</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#teaching" class="nav-link" role="menuitem">Teaching</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-        <section id="about">
-            <h2>About</h2>
-            <div class="item">
-                <!-- Add your about content here -->
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="profile-image-container">
+                        <img src="./assets/images/profile-photo.jpg" 
+                             alt="Dr. John Doe - Theoretical Physicist and Researcher" 
+                             class="profile-image"
+                             width="300" 
+                             height="300"
+                             loading="eager">
+                    </div>
+                    <div class="hero-text">
+                        <h1 id="hero-heading" class="hero-title">Dr. John Doe</h1>
+                        <h2 class="hero-subtitle">Postdoctoral Researcher in Theoretical Physics</h2>
+                        <p class="hero-description">
+                            I'm a postdoctoral researcher at [University Name], working at the [Department/Center]. 
+                            I am primarily interested in advancing our understanding of quantum mechanics and developing 
+                            novel computational methods for complex physical systems. My research focuses on 
+                            [specific research area], with applications in [application areas].
+                        </p>
+                        <div class="social-links" role="list" aria-label="Professional social media links">
+                            <a href="https://scholar.google.com/citations?user=yourscholarid" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="social-link"
+                               aria-label="Google Scholar Profile">
+                                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16c-.169 1.334-.896 2.487-2.011 3.236-.648.436-1.381.681-2.177.681-.914 0-1.787-.258-2.487-.681-.648-.436-1.114-1.006-1.383-1.681-.269-.675-.269-1.426 0-2.101.269-.675.735-1.245 1.383-1.681.7-.423 1.573-.681 2.487-.681.796 0 1.529.245 2.177.681 1.115.749 1.842 1.902 2.011 3.236z"/>
+                                </svg>
+                            </a>
+                            <a href="https://orcid.org/0000-0000-0000-0000" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="social-link"
+                               aria-label="ORCID Profile">
+                                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0z"/>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com/in/yourprofile" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="social-link"
+                               aria-label="LinkedIn Profile">
+                                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="item">
-                <!-- Add experience entries -->
+        <!-- Research Section -->
+        <section id="research" class="research-section" aria-labelledby="research-heading">
+            <div class="container">
+                <h2 id="research-heading" class="section-title">Research Interests</h2>
+                <div class="research-grid">
+                    <article class="research-item">
+                        <h3 class="research-title">Quantum Mechanics & Field Theory</h3>
+                        <p class="research-description">
+                            Investigating fundamental aspects of quantum mechanics with applications 
+                            to modern physics problems. Focus on developing new theoretical frameworks 
+                            for understanding quantum phenomena.
+                        </p>
+                    </article>
+                    <article class="research-item">
+                        <h3 class="research-title">Computational Physics</h3>
+                        <p class="research-description">
+                            Developing advanced computational methods for solving complex physical 
+                            systems. Specializing in numerical simulations and algorithm optimization 
+                            for high-performance computing applications.
+                        </p>
+                    </article>
+                    <article class="research-item">
+                        <h3 class="research-title">Mathematical Physics</h3>
+                        <p class="research-description">
+                            Applying advanced mathematical techniques to physics problems. 
+                            Research includes differential geometry, topology, and algebraic 
+                            structures in theoretical physics.
+                        </p>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="item">
-                <!-- Add project entries -->
+        <!-- Publications Section -->
+        <section id="publications" class="publications-section" aria-labelledby="publications-heading">
+            <div class="container">
+                <h2 id="publications-heading" class="section-title">Recent Publications</h2>
+                <div class="publications-list">
+                    <article class="publication-item" itemscope itemtype="https://schema.org/ScholarlyArticle">
+                        <h3 class="publication-title" itemprop="name">
+                            Title of Your Recent Research Paper in Theoretical Physics
+                        </h3>
+                        <p class="publication-authors">
+                            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                <span itemprop="name">John Doe</span>
+                            </span>, 
+                            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                <span itemprop="name">Co-Author Name</span>
+                            </span>
+                        </p>
+                        <p class="publication-journal">
+                            <span itemprop="isPartOf" itemscope itemtype="https://schema.org/Periodical">
+                                <span itemprop="name">Journal of Theoretical Physics</span>
+                            </span>, 
+                            <time itemprop="datePublished" datetime="2024">2024</time>
+                        </p>
+                        <p class="publication-abstract" itemprop="abstract">
+                            Brief abstract or description of your research findings and their significance 
+                            to the field of theoretical physics.
+                        </p>
+                    </article>
+                    
+                    <article class="publication-item" itemscope itemtype="https://schema.org/ScholarlyArticle">
+                        <h3 class="publication-title" itemprop="name">
+                            Another Research Paper on Computational Methods
+                        </h3>
+                        <p class="publication-authors">
+                            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                <span itemprop="name">John Doe</span>
+                            </span>
+                        </p>
+                        <p class="publication-journal">
+                            <span itemprop="isPartOf" itemscope itemtype="https://schema.org/Periodical">
+                                <span itemprop="name">Computational Physics Review</span>
+                            </span>, 
+                            <time itemprop="datePublished" datetime="2024">2024</time>
+                        </p>
+                        <p class="publication-abstract" itemprop="abstract">
+                            Description of computational methods developed and their applications 
+                            in solving complex physics problems.
+                        </p>
+                    </article>
+                </div>
+                <div class="publications-link">
+                    <a href="https://scholar.google.com/citations?user=yourscholarid" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="btn btn-primary">
+                        View All Publications
+                    </a>
+                </div>
             </div>
         </section>
 
-        <section id="publications">
-            <h2>Publications</h2>
-            <div class="item">
-                <!-- Add publication entries -->
+        <!-- Teaching Section -->
+        <section id="teaching" class="teaching-section" aria-labelledby="teaching-heading">
+            <div class="container">
+                <h2 id="teaching-heading" class="section-title">Teaching & Education</h2>
+                <div class="teaching-content">
+                    <div class="teaching-item">
+                        <h3 class="teaching-course">Advanced Quantum Mechanics</h3>
+                        <p class="teaching-details">Teaching Assistant, University Name, Fall 2024</p>
+                        <p class="teaching-description">
+                            Assisted in teaching graduate-level quantum mechanics, developed problem sets, 
+                            and conducted laboratory sessions for advanced physics students.
+                        </p>
+                    </div>
+                    
+                    <div class="teaching-item">
+                        <h3 class="teaching-course">Computational Physics Methods</h3>
+                        <p class="teaching-details">Instructor, University Name, Spring 2024</p>
+                        <p class="teaching-description">
+                            Designed and taught a course on computational methods in physics, 
+                            including numerical analysis and scientific programming.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="item">
-                <!-- Add contact information -->
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="section-title">Contact Information</h2>
+                <div class="contact-content">
+                    <div class="contact-info" itemscope itemtype="https://schema.org/ContactPoint">
+                        <h3 class="contact-subtitle">Get in Touch</h3>
+                        <p class="contact-item">
+                            <strong>Email:</strong> 
+                            <a href="mailto:john.doe@university.edu" itemprop="email">john.doe@university.edu</a>
+                        </p>
+                        <p class="contact-item">
+                            <strong>Office:</strong> 
+                            <span itemprop="streetAddress">Building Name, Room 123</span><br>
+                            <span itemprop="addressLocality">University Name</span>, 
+                            <span itemprop="addressRegion">State</span> 
+                            <span itemprop="postalCode">12345</span>
+                        </p>
+                        <p class="contact-item">
+                            <strong>Research Inquiries:</strong> john.doe@university.edu<br>
+                            <strong>General Questions:</strong> john.doe@gmail.com
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
+    </main>
 
-        <footer>
-            © 2024 Naman Goyal. All rights reserved.
-        </footer>
-    </div>
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    © 2024 John Doe. Built with HTML, CSS, and JavaScript. 
+                    Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.
+                </p>
+                <p class="footer-links">
+                    <a href="./sitemap.xml" rel="nofollow">Sitemap</a> |
+                    <a href="./privacy.html">Privacy Policy</a> |
+                    <a href="#contact">Contact</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Dynamic content loading
-        window.addEventListener('DOMContentLoaded', () => {
-            const items = document.querySelectorAll('.item');
-            items.forEach(item => {
-                item.style.opacity = '0';
-                item.style.transform = 'translateY(20px)';
-                item.style.transition = 'all 0.4s ease-out';
-                
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            item.style.opacity = '1';
-                            item.style.transform = 'translateY(0)';
-                        }
-                    });
-                });
-
-                observer.observe(item);
-            });
-        });
-    </script>
+    <!-- JavaScript -->
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
